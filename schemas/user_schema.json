@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "required": ["accountName", "accountNumber", "bankName", "bankCode", "phoneNo", "email", "images"],
+    "properties": {
+      "accountName": {
+        "type": "string",
+        "description": "User's account name"
+      },
+      "accountNumber": {
+        "type": "string",
+        "description": "User's account number"
+      },
+      "bankName": {
+        "type": "string",
+        "description": "User's bank's name"
+      },
+      "bankCode": {
+        "type": "string",
+        "description": "User's bank's code"
+      },
+      "phoneNo": {
+        "type": "string",
+        "description": "User's phone number"
+      },
+      "email": {
+        "type": "string",
+        "description": "User's email"
+      },
+      "images": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "binary",
+          "description": "User's images (Base64 encoded or as file uploads)"
+        },
+        "description": "List of user's images"
+      }
+    }
+  }
+  
