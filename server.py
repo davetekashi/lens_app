@@ -71,7 +71,7 @@ def get_images_by_ids(image_ids):
 def format_to_normal_array(string_array):
     normal_array = ast.literal_eval(string_array)
     return normal_array
-# Define a function to get the encoding of 5 images and store to the database
+# Define a function to get the encoding of 5 images and store to the databas
 
 
 async def get_multiple_image_encoding(files: List[UploadFile], user_id: str, description: str):
